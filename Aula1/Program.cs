@@ -8,3 +8,27 @@ int ano_nasc = Convert.ToInt32(Console.ReadLine());
 int idade = 2023 - ano_nasc;
 
 System.Console.WriteLine("Sua idade é " + idade + " anos.");
+
+//Exemplo estrutura de decisão
+if (idade >= 18)
+{
+    System.Console.WriteLine("Maior de idade");
+}
+else
+{
+    System.Console.WriteLine("Menor de idade");
+
+}
+int opcao = 1;
+switch (opcao)
+{
+    case 1:
+        System.Console.WriteLine("Realizar uma soma");
+        break;
+    case 2:
+        System.Console.WriteLine("Realizar uma subtração");
+        break;
+    default:
+        System.Console.WriteLine("Opção inexistente");
+        break;
+}
