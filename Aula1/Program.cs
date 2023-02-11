@@ -19,6 +19,7 @@ else
     System.Console.WriteLine("Menor de idade");
 
 }
+
 int opcao = 1;
 switch (opcao)
 {
@@ -32,3 +33,8 @@ switch (opcao)
         System.Console.WriteLine("Opção inexistente");
         break;
 }
+
+double media = 8;
+
+string situacao = (media >= 6 )? "Passou": "Reprovou";
+System.Console.WriteLine("Aluno " + situacao);
