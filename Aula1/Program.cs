@@ -38,3 +38,10 @@ double media = 8;
 
 string situacao = (media >= 6 )? "Passou": "Reprovou";
 System.Console.WriteLine("Aluno " + situacao);
+
+int cont = 1;
+while (cont < 5)
+{
+    System.Console.WriteLine(cont);
+    cont++;
+}
