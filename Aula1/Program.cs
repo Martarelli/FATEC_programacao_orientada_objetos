@@ -39,6 +39,7 @@ double media = 8;
 string situacao = (media >= 6 )? "Passou": "Reprovou";
 System.Console.WriteLine("Aluno " + situacao);
 
+System.Console.WriteLine("WHILE");
 int cont = 1;
 while (cont < 5)
 {
@@ -46,7 +47,15 @@ while (cont < 5)
     cont++;
 }
 
+System.Console.WriteLine("FOR");
 for (int i = 0; i < 10; i++)
 {
     System.Console.WriteLine(i);
 }
+
+System.Console.WriteLine("DO WHILE");
+do
+{
+    System.Console.WriteLine(cont);
+    cont--;
+} while (cont > 0);
