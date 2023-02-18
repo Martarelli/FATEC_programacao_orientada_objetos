@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace POO_noite.ClasseConta
+namespace ClasseConta
 {
     public class Conta
     {
@@ -13,8 +13,8 @@ namespace POO_noite.ClasseConta
         public double saldo;
 
     //METODOS
-        public void Sacar();
+        public void Sacar(){}
 
-        public void Depositar();
+        public void Depositar(){}
     }
 }
