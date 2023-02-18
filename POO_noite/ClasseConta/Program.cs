@@ -5,10 +5,11 @@ using ClasseConta;
 Conta c1;
 c1 = new Conta();
 c1.numero = 10001;
-c1.titular = "Martrelli";
+c1.titular = "Martarelli";
+c1.MostrarAtributos();
 
-System.Console.WriteLine("Numero: " + c1.numero);
-System.Console.WriteLine("Titular: " + c1.titular);
-System.Console.WriteLine("Saldo: " + c1.saldo);
 
 Conta c2 = new Conta();
+c2.numero = 10002;
+c2.titular = "Fulano";
+c2.MostrarAtributos();

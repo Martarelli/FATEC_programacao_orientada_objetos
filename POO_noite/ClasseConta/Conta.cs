@@ -16,5 +16,11 @@ namespace ClasseConta
         public void Sacar(){}
 
         public void Depositar(){}
+
+        public void MostrarAtributos(){
+            System.Console.WriteLine("Numero: " + numero);
+            System.Console.WriteLine("Titular: " + titular);
+            System.Console.WriteLine("Saldo: " + saldo);
+        }
     }
 }
