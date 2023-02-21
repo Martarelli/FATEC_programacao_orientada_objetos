@@ -18,18 +18,18 @@ namespace ClasseConta
         public void Depositar(){}
 
         public void MostrarAtributos(){
-            System.Console.WriteLine("Numero: " + numero);
+            System.Console.WriteLine("\nNumero: " + numero);
             System.Console.WriteLine("Titular: " + titular);
-            System.Console.WriteLine("Saldo: " + saldo);
+            System.Console.WriteLine("Saldo: " + saldo + "\n");
         }
 
-        public void transferencia(double valor, Conta c1, Conta c2){
-            if (c1.saldo > 0 && c1.saldo - valor >= 0)
+        public void transferencia(double valor, Conta c2){
+            if (saldo > 0 && saldo - valor >= 0)
             {
-                c1.saldo -= valor;
+                saldo -= valor;
                 c2.saldo += valor;
-                System.Console.WriteLine("Novo saldo conta titular: " + c1.titular + " = R$"+ c1.saldo);
-                System.Console.WriteLine("Novo saldo conta titular: " + c2.titular + " = R$"+ c2.saldo);  
+                System.Console.WriteLine("\nNovo saldo conta titular: " + titular + " = R$" + saldo);
+                System.Console.WriteLine("Novo saldo conta titular: " + c2.titular + " = R$"+ c2.saldo + "\n");  
             }
             else
             {
