@@ -12,7 +12,7 @@ namespace ClasseProduto
         public double preco;
 
         public void mostrarDados(){
-            System.Console.WriteLine("CODIGO: " + codigo);
+            System.Console.WriteLine("\nCODIGO: " + codigo);
             System.Console.WriteLine("DESCRIÇÃO: " + descricao);
             System.Console.WriteLine("PREÇO: " + preco);
         }
