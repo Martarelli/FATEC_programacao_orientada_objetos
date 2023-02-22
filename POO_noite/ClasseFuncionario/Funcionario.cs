@@ -11,7 +11,7 @@ namespace ClasseFuncionario
         public string nome;
         public double salario;
 
-        public void mostrarDados(){
+        public void MostrarDados(){
             System.Console.WriteLine("\nCODIGO: " + codigo);
             System.Console.WriteLine("NOME: " + nome);
             System.Console.WriteLine("SALARIO: " + salario + "\n");
