@@ -23,7 +23,7 @@ namespace ClasseConta
             System.Console.WriteLine("Saldo: " + saldo + "\n");
         }
 
-        public void transferencia(double valor, Conta c2){
+        public void Transferencia(double valor, Conta c2){
             if (saldo > 0 && saldo - valor >= 0)
             {
                 saldo -= valor;
