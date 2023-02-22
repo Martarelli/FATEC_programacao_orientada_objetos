@@ -11,7 +11,7 @@ namespace ClasseProduto
         public string descricao;
         public double preco;
 
-        public void mostrarDados(){
+        public void MostrarDados(){
             System.Console.WriteLine("\nCODIGO: " + codigo);
             System.Console.WriteLine("DESCRIÇÃO: " + descricao);
             System.Console.WriteLine("PREÇO: " + preco);
