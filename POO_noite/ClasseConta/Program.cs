@@ -22,4 +22,4 @@ c3.titular = "Fulano";
 c3.saldo = 15200.25;
 c3.MostrarAtributos();
 
-c1.transferencia(200000, c3);
+c1.Transferencia(200000, c3);
