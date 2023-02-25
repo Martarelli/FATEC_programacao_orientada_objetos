@@ -13,9 +13,13 @@ namespace ClasseConta
         public double saldo;
 
     //METODOS
-        public void Sacar(){}
+        public void Sacar(double valor){
+            saldo -= valor;
+        }
 
-        public void Depositar(){}
+        public void Depositar(double valor){
+            saldo += valor;
+        }
 
         public void MostrarAtributos(){
             System.Console.WriteLine("\nNumero: " + numero);
