@@ -28,7 +28,7 @@ namespace ClasseConta
         }
 
         public void Transferencia(double valor, Conta c2){
-            if (saldo > 0 && saldo - valor >= 0)
+            if (saldo >= valor)
             {
                 saldo -= valor;
                 c2.saldo += valor;
