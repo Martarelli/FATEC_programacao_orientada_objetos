@@ -12,7 +12,14 @@ namespace ArrayFuncionario
         public double salario;
 
         public void MostrarDados(){
-            System.Console.WriteLine($"/Código: {codigo} \tNome: {nome}\t Salario: {salario:C}\n");
+            System.Console.WriteLine($"Código: {codigo} \tNome: {nome}\t Salario: {salario:C}\n");
+        }
+
+        public void AumentoSalario(){
+            if(salario < 300)
+            {
+                salario *= 1.1;
+            }
         }
     }
 }
