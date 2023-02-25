@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ClasseConta
+namespace ArrayConta
 {
     public class Conta
     {
@@ -14,7 +14,7 @@ namespace ClasseConta
 
     //METODOS
         public void MostrarAtributos(){
-            System.Console.WriteLine($"Titular: {titular} \tNumero: {numeroSaldo}\t Saldo: {saldo:C}\n");
+            System.Console.WriteLine($"Titular: {titular} \tNumero: {numero}\t Saldo: {saldo:C}\n");
         }
 
       
