@@ -18,7 +18,7 @@ namespace EncapsulamentoConta
         private string titular;
         public string Titular
         {
-            get { return titular; }
+            get { return titular.ToUpper(); }
             set { titular = value; }
         }
         
@@ -26,7 +26,12 @@ namespace EncapsulamentoConta
         public Double Saldo
         {
             get { return saldo; }
-            set { saldo = value; }
+            set { 
+                if (value > 0)
+                   saldo = value; 
+                else
+                    System.Console.WriteLine("Código inválido!");
+                 }
         }
         
         
