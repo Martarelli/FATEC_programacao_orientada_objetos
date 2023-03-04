@@ -10,6 +10,12 @@ namespace ArrayProduto
         private int codigo;
         private string nome;
         private double preco;
+
+        public void Mostrar(){
+            System.Console.WriteLine($"Código: {Codigo}\tNome: {Nome}\tPreço: {Preco}");
+        }
+
+
         public int Codigo
         {
             get { return codigo; }
