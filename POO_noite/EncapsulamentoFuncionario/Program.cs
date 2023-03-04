@@ -1,2 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+using EncapsulamentoFuncionario;
+
+Funcionario func = new Funcionario();
+func.Salario = 200;
+System.Console.WriteLine("SALARIO: " + func.Salario);
