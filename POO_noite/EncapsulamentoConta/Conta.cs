@@ -7,12 +7,29 @@ namespace EncapsulamentoConta
 {
     public class Conta
     {
-        //ATRIBUTOS
-        public int numero;
-        public string titular;
-        public double saldo;
 
-    //METODOS
+        private int numero;
+        public int Numero
+        {
+            get { return numero; }
+            set { numero = value; }
+        }
+
+        private string titular;
+        public string Titular
+        {
+            get { return titular; }
+            set { titular = value; }
+        }
+        
+        private Double saldo;
+        public Double Saldo
+        {
+            get { return saldo; }
+            set { saldo = value; }
+        }
+        
+        
         public void Sacar(double valor){
             saldo -= valor;
         }
