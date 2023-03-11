@@ -14,12 +14,15 @@ namespace ConstrutorConta
 
         //CONSTRUTORES
 
-        public void Conta(int n)
+        public Conta()
+        {
+        }
+        public Conta(int n)
         {
             this.numero = n;
         }
 
-        public void Conta(int n, string t, double s)
+        public Conta(int n, string t, double s)
         {
             this.numero = n;
             this.titular = t;
