@@ -8,18 +8,27 @@ namespace ConstrutorConta
     public class Conta
     {
         //ATRIBUTOS
-        public int numero;
-        public string titular;
-        public double saldo;
+        private int numero;
+        private string titular;
+        private double saldo;
+        public static int Contador { get; set; }
+        
+        public int Numero { get; set; }
+        public string Titular { get; set; }
+        public double Saldo { get; set; }
+
+        
 
         //CONSTRUTORES
 
         public Conta()
         {
+            Contador++;
         }
         public Conta(int n)
         {
             this.numero = n;
+            Contador++;
         }
 
         public Conta(int n, string t, double s)
@@ -27,6 +36,7 @@ namespace ConstrutorConta
             this.numero = n;
             this.titular = t;
             this.saldo = s;
+            Contador++;
         }
         //METODOS
         public void Sacar(double valor){
