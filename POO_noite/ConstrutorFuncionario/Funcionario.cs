@@ -7,6 +7,6 @@ namespace ConstrutorFuncionario
 {
     public class Funcionario
     {
-        
+        public int Codigo { get; set; }
     }
 }
