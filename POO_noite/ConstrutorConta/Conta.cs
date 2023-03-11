@@ -12,7 +12,20 @@ namespace ConstrutorConta
         public string titular;
         public double saldo;
 
-    //METODOS
+        //CONSTRUTORES
+
+        public void Conta(int n)
+        {
+            this.numero = n;
+        }
+
+        public void Conta(int n, string t, double s)
+        {
+            this.numero = n;
+            this.titular = t;
+            this.saldo = s;
+        }
+        //METODOS
         public void Sacar(double valor){
             saldo -= valor;
         }
