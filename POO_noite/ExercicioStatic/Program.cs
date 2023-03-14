@@ -3,3 +3,5 @@ Implemente os conceitos de orientação a objetos utilizados até o momento, par
 Crie um método que calcule e mostre o novo salário aplicando um reajuste salarial a partir de um valor informado.
 Use o construtor static para predeterminar que o código do funcionário comece de 100
 Realize 3 instâncias */
+
+using ExercicioStatic;
