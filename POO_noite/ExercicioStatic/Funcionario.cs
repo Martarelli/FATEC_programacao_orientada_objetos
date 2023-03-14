@@ -13,10 +13,16 @@ namespace ExercicioStatic
 
         private double Salario { get; set; }
 
-        private int Contador { get; set; }
+        public static int Contador { get; set; }
 
-        public void Funcionario()
+        public Funcionario()
         {
+            Contador++;
+        }
+
+        public Funcionario(int cod)
+        {
+            Codigo = cod;
             Contador++;
         }
 
