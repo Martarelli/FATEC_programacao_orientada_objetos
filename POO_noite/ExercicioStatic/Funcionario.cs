@@ -13,7 +13,7 @@ namespace ExercicioStatic
 
         public double Salario { get; set; }
 
-        public static int Contador { get; set; }
+        public static int Contador { get; set; } = 100;
 
         public Funcionario()
         {
