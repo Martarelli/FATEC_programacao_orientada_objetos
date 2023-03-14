@@ -7,10 +7,19 @@ namespace ExercicioStatic
 {
     public class Funcionario
     {
-        public int Codigo { get; set; }
+        private int Codigo { get; set; }
 
-        public string Nome { get; set; }
+        private string Nome { get; set; }
 
-        public double Salario { get; set; }
+        private double Salario { get; set; }
+
+        private int Contador { get; set; }
+
+        public void Funcionario()
+        {
+            Contador++;
+        }
+
+
     }
 }
