@@ -8,7 +8,16 @@ Realize 3 instâncias */
 using ExercicioStatic;
 
 Funcionario f1 = new Funcionario();
+f1.Codigo = 1;
+f1.Nome = "Martarelli";
+f1.Salario = 2000.00;
+f1.Reajuste(20);
 Funcionario f2 = new Funcionario();
-Funcionario f3 = new Funcionario();
+f2.Codigo = 2;
+f2.Nome = "Gabi";
+f2.Salario = 5000.00;
+Funcionario f3 = new Funcionario(3);
+f3.Nome = "Doidinha";
+f3.Salario = 1000.00;
 
 System.Console.WriteLine(Funcionario.Contador);

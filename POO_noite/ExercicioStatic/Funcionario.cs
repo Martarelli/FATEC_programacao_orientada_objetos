@@ -7,11 +7,11 @@ namespace ExercicioStatic
 {
     public class Funcionario
     {
-        private int Codigo { get; set; }
+        public int Codigo { get; set; }
 
-        private string Nome { get; set; }
+        public string Nome { get; set; }
 
-        private double Salario { get; set; }
+        public double Salario { get; set; }
 
         public static int Contador { get; set; }
 
@@ -26,6 +26,11 @@ namespace ExercicioStatic
             Contador++;
         }
 
+        public void Reajuste(double porcentagem)
+        {
+            double salarioReajustado = Salario + Salario*porcentagem/100;
+            System.Console.WriteLine($"Salario do Funcionário {Nome} reajustado com {porcentagem}% de ajuste é de {salarioReajustado:C}");
+        }
 
     }
 }
