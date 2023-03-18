@@ -7,6 +7,6 @@ namespace AgregacaoConta
 {
     public class Conta
     {
-        
+        public int Codigo { get; set; }
     }
 }
