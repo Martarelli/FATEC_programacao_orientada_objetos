@@ -17,5 +17,9 @@ namespace AgregacaoContaVetor
             Cpf = cpf;
             Rg = rg;
         }
+        public void MostrarCliente()
+        {
+            System.Console.WriteLine($"Nome: {Nome}\tCPF: {Cpf}\tRG: {Rg}");
+        }
     }
 }
