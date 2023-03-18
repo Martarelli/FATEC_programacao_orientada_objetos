@@ -12,7 +12,7 @@ namespace AgregacaoContaVetor
         public List<Cliente> vetTitular { get; set; } 
         public void MostrarConta()
         {
-            System.Console.WriteLine($"Numero:{Numero}\tSaldo: {Saldo}");
+            System.Console.WriteLine($"Numero:{Numero}\tSaldo: {Saldo:C}");
         }
     }
 }
