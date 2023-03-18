@@ -8,5 +8,7 @@ namespace AgregacaoConta
     public class Conta
     {
         public int Codigo { get; set; }
+
+        public Cliente Cliente { get; set; }
     }
 }
