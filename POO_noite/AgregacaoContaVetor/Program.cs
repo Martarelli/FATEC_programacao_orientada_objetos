@@ -13,6 +13,7 @@ c1.vetTitular.Add(cli1);
 c1.vetTitular.Add(cli2);
 c1.vetTitular.Add(cli3);
 
+c1.MostrarConta();
 foreach(Cliente c in c1.vetTitular)
 {
     c.MostrarCliente();
