@@ -9,7 +9,7 @@ namespace ExercicioStatic
     {
         public int Codigo { get; set; }
 
-        public string Nome { get; set; }
+        public string Nome { get; set; } = "";
 
         public double Salario { get; set; }
 
@@ -26,6 +26,10 @@ namespace ExercicioStatic
             Contador++;
         }
 
+        public void MostrarAtributos()
+        {
+            System.Console.WriteLine($"Código: {Codigo}\tNome: {Nome}\tSalário: {Salario:C}");
+        }
         public void Reajuste(double porcentagem)
         {
             double salarioReajustado = Salario + Salario*porcentagem/100;
