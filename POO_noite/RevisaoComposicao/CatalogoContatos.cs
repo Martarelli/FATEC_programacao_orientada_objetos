@@ -17,5 +17,13 @@ namespace RevisaoComposicao
             //listaContatos = new List<Contatos>();
 
         }
+
+        public void ExibirContatos()
+        {
+            foreach (Contatos c in ListaContatos)
+            {
+                c.ListarContatos();
+            }
+        }
     }
 }
