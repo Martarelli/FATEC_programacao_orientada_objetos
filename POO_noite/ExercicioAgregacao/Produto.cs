@@ -10,8 +10,17 @@ namespace ExercicioAgregacao
         public float Preco { get; set; }
         public int Tamanho { get; set; }
 
-        public void Vendido (){
+        public Produto()
+        {
             
+        }
+        public Produto(float p, int t)
+        {
+            Preco = p;
+            Tamanho = t;
+        }
+        public void Vendido (){
+            System.Console.WriteLine($"O produto tem tamanho: {Tamanho} e custa {Preco:C}");
         }
     }
 }
