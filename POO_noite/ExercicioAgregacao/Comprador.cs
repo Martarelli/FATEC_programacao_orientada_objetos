@@ -9,9 +9,13 @@ namespace ExercicioAgregacao
     {
         public float Verba { get; set; }
 
-        public float Compra()
+        public void Compra(Produto p)
         {
-            return Verba;
+            if(Verba >= p.Preco){
+                System.Console.WriteLine($"Verba suficiente para a compra...");
+            } else {
+                System.Console.WriteLine($"Verba insuficiente...");
+            };
         }
     }
 }
