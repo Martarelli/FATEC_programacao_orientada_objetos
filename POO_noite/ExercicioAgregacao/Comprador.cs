@@ -7,6 +7,11 @@ namespace ExercicioAgregacao
 {
     public class Comprador
     {
-        
+        public float Verba { get; set; }
+
+        public void Compra()
+        {
+
+        }
     }
 }
