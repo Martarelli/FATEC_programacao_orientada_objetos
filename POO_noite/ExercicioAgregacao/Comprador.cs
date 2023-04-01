@@ -9,9 +9,9 @@ namespace ExercicioAgregacao
     {
         public float Verba { get; set; }
 
-        public void Compra()
+        public float Compra()
         {
-
+            return Verba;
         }
     }
 }
