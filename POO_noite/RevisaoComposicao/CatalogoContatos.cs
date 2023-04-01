@@ -25,5 +25,9 @@ namespace RevisaoComposicao
                 c.ListarContatos();
             }
         }
+        ~CatalogoContatos()
+        {
+            
+        }
     }
 }
