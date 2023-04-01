@@ -7,6 +7,11 @@ namespace ExercicioAgregacao
 {
     public class Produto
     {
-        
+        public float Preco { get; set; }
+        public int Tamanho { get; set; }
+
+        public void Vendido (){
+            
+        }
     }
 }
