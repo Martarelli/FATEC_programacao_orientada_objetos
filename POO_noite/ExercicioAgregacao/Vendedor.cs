@@ -7,6 +7,11 @@ namespace ExercicioAgregacao
 {
     public class Vendedor
     {
-        
+        public float Comissao { get; set; }
+
+        public void Vende()
+        {
+            
+        }
     }
 }
