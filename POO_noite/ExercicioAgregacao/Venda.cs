@@ -17,6 +17,15 @@ namespace ExercicioAgregacao
             Comprador = c;
         }
 
+        public void ConcretizarVenda()
+        {
+            System.Console.WriteLine($"Venda Concretizada!!!\nValor: {Produto.Preco:C}\nComissão da venda: {Vendedor.Comissao:C}\nVerba disponível: {Comprador.Verba}");
+        }
+
+        public void CancelarVenda()
+        {
+            System.Console.WriteLine($"Venda Cancelada!!!\nValor: {Produto.Preco:C}");
+        }
         
     }
 }
