@@ -9,11 +9,14 @@ namespace ExercicioAgregacao
     {
         public float Comissao { get; set; }
         
-
+        public Vendedor(float c)
+        {
+            Comissao = (c / 100f);
+        }
         public void Vende(Produto p)
         {
-            Comissao = p.Preco * 0.25f;
-            System.Console.WriteLine($"A comissão da venda é de {Comissao:C}");
+            float valorComissao = p.Preco * Comissao;
+            System.Console.WriteLine($"A comissão da venda é de {valorComissao:C}");
         }
     }
 }

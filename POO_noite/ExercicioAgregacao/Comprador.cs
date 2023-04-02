@@ -9,6 +9,11 @@ namespace ExercicioAgregacao
     {
         public float Verba { get; set; }
 
+        public Comprador(float v)
+        {
+            Verba = v;
+        }
+
         public void Compra(Produto p)
         {
             if(Verba >= p.Preco){
