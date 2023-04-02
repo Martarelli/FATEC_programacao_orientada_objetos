@@ -7,10 +7,10 @@ namespace ExercicioAgregacao
 {
     public class Venda
     {
-        public List<Produto> Produto { get; set; }
+        public Produto Produto { get; set; }
         public Vendedor Vendedor { get; set; }
         public Comprador Comprador { get; set; }
-        public Venda(List<Produto> p, Vendedor v, Comprador c)
+        public Venda(Produto p, Vendedor v, Comprador c)
         {
             Produto = p;
             Vendedor = v;
