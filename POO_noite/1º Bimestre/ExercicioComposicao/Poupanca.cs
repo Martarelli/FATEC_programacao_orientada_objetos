@@ -43,5 +43,10 @@ namespace ExercicioComposicao
             Saldo *= 1.05;
             System.Console.WriteLine($"O novo saldo é {Saldo:C}");
         }
+
+        public void GerarExtrato()
+        {
+            System.Console.WriteLine($"\n*****EXTRATO*****\nSALDO:\t{Saldo:C}");
+        }
     }
 }
