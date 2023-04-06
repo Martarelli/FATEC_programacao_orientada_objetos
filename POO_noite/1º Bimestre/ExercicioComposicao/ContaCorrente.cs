@@ -21,6 +21,10 @@ namespace ExercicioComposicao
             ChequeEspecial = c;
         }
 
-        
+        public void Depositar(double valor)
+        {
+            Saldo += valor;
+            System.Console.WriteLine("Deposito realizado com sucesso...");
+        }
     }
 }
