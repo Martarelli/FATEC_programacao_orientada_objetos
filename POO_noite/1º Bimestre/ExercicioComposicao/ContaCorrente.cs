@@ -26,5 +26,25 @@ namespace ExercicioComposicao
             Saldo += valor;
             System.Console.WriteLine("Deposito realizado com sucesso...");
         }
+
+        public void Sacar(double valor)
+        {
+            if(Saldo >= valor)
+            {
+                Saldo -= valor;
+                System.Console.WriteLine("Saque realizado com sucesso...");
+            }
+            else if (Saldo+ChequeEspecial >= valor)
+            {
+                double valorExcedente = valor - Saldo;
+                Saldo = 0;
+                ChequeEspecial -= valorExcedente;
+                System.Console.WriteLine("Saque realizado com sucesso mas entrou no cheque especial...");
+            }
+            else
+            {
+                System.Console.WriteLine("O saque não pode ser executado... Saldo insuficiente...");
+            }
+        }
     }
 }
