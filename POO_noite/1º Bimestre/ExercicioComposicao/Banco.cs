@@ -15,6 +15,7 @@ namespace ExercicioComposicao
             Poupancas = new List<Poupanca>();
             ContasCorrentes = new List<ContaCorrente>();
         }
+
         public Banco(List<Poupanca> p, List<ContaCorrente> c)
         {
             Poupancas = p;
@@ -28,5 +29,12 @@ namespace ExercicioComposicao
             System.Console.WriteLine("Conta Corrente criada com sucesso...");
         }
         
+        public void AbrirPoupanca(double saldo)
+        {
+            Poupanca p = new Poupanca(saldo);
+            Poupancas.Add(p);
+            System.Console.WriteLine("Poupança criada com sucesso...");
+        }
+
     }
 }
