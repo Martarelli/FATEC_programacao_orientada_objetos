@@ -46,5 +46,13 @@ namespace ExercicioComposicao
                 System.Console.WriteLine("O saque não pode ser executado... Saldo insuficiente...");
             }
         }
+
+        public void GerarExtrato()
+        {
+            System.Console.WriteLine($"\n*****EXTRATO*****\nSALDO:\t{Saldo:C}\nCHEQUE ESPECIAL:\T{ChequeEspecial:C}");
+        }
+
+
+
     }
 }
