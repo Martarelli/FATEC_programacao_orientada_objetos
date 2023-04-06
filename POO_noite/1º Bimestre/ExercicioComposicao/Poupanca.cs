@@ -19,6 +19,10 @@ namespace ExercicioComposicao
             Saldo = valor;
         }
 
-        
+        public void Depositar(double valor)
+        {
+            Saldo += valor;
+            System.Console.WriteLine("Deposito realizado com sucesso...");
+        }
     }
 }
