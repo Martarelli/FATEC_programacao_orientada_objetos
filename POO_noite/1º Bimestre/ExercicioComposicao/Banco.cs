@@ -36,6 +36,14 @@ namespace ExercicioComposicao
             System.Console.WriteLine("Poupança criada com sucesso...");
         }
 
+        public void ExibirContas()
+        {
+            foreach (ContaCorrente c in ContasCorrentes)
+            {
+                c.GerarExtrato();
+            }
+        }
+
         ~Banco()
         {
             System.Console.WriteLine("O banco declarou falencia...");
