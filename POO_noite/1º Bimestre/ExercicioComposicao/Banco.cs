@@ -28,7 +28,7 @@ namespace ExercicioComposicao
             ContasCorrentes.Add(c);
             System.Console.WriteLine("Conta Corrente criada com sucesso...");
         }
-        
+
         public void AbrirPoupanca(double saldo)
         {
             Poupanca p = new Poupanca(saldo);
@@ -36,5 +36,11 @@ namespace ExercicioComposicao
             System.Console.WriteLine("Poupança criada com sucesso...");
         }
 
+        ~Banco()
+        {
+            System.Console.WriteLine("O banco declarou falencia...");
+            Poupancas = null;
+            ContasCorrentes = null;
+        }
     }
 }
