@@ -16,3 +16,4 @@ b1.AplicarRendimentoPoupanca();
 
 b1 = null;
 GC.Collect();
+Console.ReadLine();
