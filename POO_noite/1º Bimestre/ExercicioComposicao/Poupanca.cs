@@ -37,5 +37,11 @@ namespace ExercicioComposicao
                 System.Console.WriteLine("O saque não pode ser executado... Saldo insuficiente...");
             }
         }
+
+        public void GerarRendimento()
+        {
+            Saldo *= 1.05;
+            System.Console.WriteLine($"O novo saldo é {Saldo:C}");
+        }
     }
 }
