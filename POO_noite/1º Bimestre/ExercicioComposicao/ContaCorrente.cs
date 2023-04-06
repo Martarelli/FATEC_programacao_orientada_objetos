@@ -49,7 +49,7 @@ namespace ExercicioComposicao
 
         public void GerarExtrato()
         {
-            System.Console.WriteLine($"\n*****EXTRATO*****\nSALDO:\t{Saldo:C}\nCHEQUE ESPECIAL:\T{ChequeEspecial:C}");
+            System.Console.WriteLine($"\n*****EXTRATO*****\nSALDO:\t{Saldo:C}\nCHEQUE ESPECIAL:\t{ChequeEspecial:C}");
         }
 
 
