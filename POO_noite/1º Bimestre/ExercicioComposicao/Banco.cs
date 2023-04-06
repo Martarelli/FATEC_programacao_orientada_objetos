@@ -12,12 +12,21 @@ namespace ExercicioComposicao
 
         public Banco()
         {
-            
+            Poupancas = new List<Poupanca>();
+            ContasCorrentes = new List<ContaCorrente>();
         }
         public Banco(List<Poupanca> p, List<ContaCorrente> c)
         {
             Poupancas = p;
             ContasCorrentes = c;
         }
+
+        public void AbrirConta(double saldo, double chequeEspecial)
+        {
+            ContaCorrente c = new ContaCorrente(saldo, chequeEspecial);
+            ContasCorrentes.Add(c);
+            System.Console.WriteLine("Conta Corrente criada com sucesso...");
+        }
+        
     }
 }
