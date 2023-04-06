@@ -13,3 +13,6 @@ b1.ExibirContas();
 b1.ExibirPoupancas();
 
 b1.AplicarRendimentoPoupanca();
+
+b1 = null;
+GC.Collect();
