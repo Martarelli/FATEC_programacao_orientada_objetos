@@ -44,6 +44,14 @@ namespace ExercicioComposicao
             }
         }
 
+        public void ExibirPoupancas()
+        {
+            foreach (Poupanca p in Poupancas)
+            {
+                p.GerarExtrato();
+            }
+        }
+
         ~Banco()
         {
             System.Console.WriteLine("O banco declarou falencia...");
