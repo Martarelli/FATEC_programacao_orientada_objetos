@@ -8,6 +8,23 @@ namespace HerancaCliente
     public class ClienteFisico : Cliente
     {
         private int cpf;
+        public int Cpf
+        {
+            get { return cpf; }
+            set { cpf = value; }
+        }
         private int rg;
+        public int Rg
+        {
+            get { return rg; }
+            set { rg = value; }
+        }
+        
+        
+        public void Mostrar()
+        {
+            //System.Console.WriteLine($"Código: {codigo}");
+        }
+
     }
 }
