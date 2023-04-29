@@ -5,10 +5,9 @@ using System.Threading.Tasks;
 
 namespace HerancaCliente
 {
-    public class Cliente
+    public class ClienteFisico : Cliente
     {
-        protected int codigo;
-        protected string nome;
-        protected string endereco;
+        private int cpf;
+        private int rg;
     }
 }
