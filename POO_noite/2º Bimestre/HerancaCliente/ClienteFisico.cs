@@ -28,9 +28,9 @@ namespace HerancaCliente
         }
         public ClienteFisico(){}
         
-        public ClienteFisico(int c, string n, string e, int c, int r) : base(c, n, e)
+        public ClienteFisico(int c, string n, string e, int cpf, int r) : base(c, n, e)
         {
-            Cpf = c;
+            Cpf = cpf;
             Rg = r;
         }
     }
