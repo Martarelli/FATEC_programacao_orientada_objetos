@@ -35,6 +35,9 @@ namespace HerancaCliente
             Nome = n;
             Endereco = e;
         }
-        
+        public void Mostrar()
+        {
+            System.Console.WriteLine($"Código: {Codigo} \tNome: {Nome}\tEndereço: {Endereco}");
+        }
     }
 }
