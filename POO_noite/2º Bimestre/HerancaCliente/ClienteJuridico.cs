@@ -30,5 +30,10 @@ namespace HerancaCliente
             Ie = i;
         }    
         
+        public void Mostrar()
+        {
+            base.Mostrar();
+            System.Console.WriteLine($"CNPJ: {Cnpj} \tIE: {Ie}");
+        }
     }
 }

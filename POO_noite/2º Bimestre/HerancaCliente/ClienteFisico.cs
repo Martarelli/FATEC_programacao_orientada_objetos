@@ -21,7 +21,11 @@ namespace HerancaCliente
         }
         
         
-
+        public void Mostrar()
+        {
+            base.Mostrar();
+            System.Console.WriteLine($"CPF: {Cpf} \tRG: {Rg}");
+        }
         public ClienteFisico(){}
         
         public ClienteFisico(int c, string n, string e, int c, int r) : base(codigo, nome, endereco)
