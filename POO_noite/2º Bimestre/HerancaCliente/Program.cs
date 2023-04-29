@@ -17,7 +17,7 @@ ClienteJuridico cj = new ClienteJuridico();
 cj.Codigo = 3;
 cj.Nome = "Empresa S/A";
 cj.Endereco = "Rua Tocantins, 33";
-cj.Cnpj = 9999999999;
+cj.Cnpj = 99999999;
 cj.Ie = 9999999;
 cj.Mostrar();
 
