@@ -18,8 +18,17 @@ namespace HerancaCliente
         {
             get { return ie; }
             set { ie = value; }
+
+    
         }
+
+        public ClienteJuridico(){}
         
+        public ClienteJuridico(int c, string n, string e, int c, int i) : base(codigo, nome, endereco)
+        {
+            Cnpj = c;
+            Ie = i;
+        }    
         
     }
 }

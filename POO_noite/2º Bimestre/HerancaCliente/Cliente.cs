@@ -26,6 +26,15 @@ namespace HerancaCliente
             get { return endereco; }
             set { endereco = value; }
         }
+
+        public Cliente(){}
+        
+        public Cliente(int c, string n, string e)
+        {
+            Codigo = c;
+            Nome = n;
+            Endereco = e;
+        }
         
     }
 }
