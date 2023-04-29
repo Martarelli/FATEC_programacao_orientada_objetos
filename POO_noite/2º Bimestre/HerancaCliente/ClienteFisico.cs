@@ -21,10 +21,7 @@ namespace HerancaCliente
         }
         
         
-        public void Mostrar()
-        {
-            //System.Console.WriteLine($"Código: {codigo}");
-        }
+
         public ClienteFisico(){}
         
         public ClienteFisico(int c, string n, string e, int c, int r) : base(codigo, nome, endereco)
