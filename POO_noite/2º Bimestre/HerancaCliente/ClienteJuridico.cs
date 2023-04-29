@@ -24,7 +24,7 @@ namespace HerancaCliente
 
         public ClienteJuridico(){}
         
-        public ClienteJuridico(int c, string n, string e, int c, int i) : base(codigo, nome, endereco)
+        public ClienteJuridico(int c, string n, string e, int c, int i) : base(c, n, e)
         {
             Cnpj = c;
             Ie = i;
