@@ -10,7 +10,7 @@ namespace ExercicioHeranca
         public int QtdeHorasTrabalhadas { get; set; }
         
 
-        public Mensalista(int c, string n, double s, double v, int q) : base(c, n, s, v)
+        public Mensalista(int c, string n, double v, int q) : base(c, n, v)
         {
             QtdeHorasTrabalhadas = q;
         }

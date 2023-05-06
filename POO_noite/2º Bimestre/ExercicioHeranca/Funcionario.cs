@@ -34,11 +34,10 @@ namespace ExercicioHeranca
         }
         
         
-        public Funcionario(int c, string n, double s, double v)
+        public Funcionario(int c, string n, double v)
         {
             Codigo = c;
             Nome = n;
-            Salario = s;
             ValorHora = v;
         }
         public virtual void CalcularSalario()
