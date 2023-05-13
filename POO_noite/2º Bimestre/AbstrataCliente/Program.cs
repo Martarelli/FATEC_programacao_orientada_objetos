@@ -1,3 +1,3 @@
 ﻿using AbstrataCliente;
 
-Cliente c = new Cliente(1, "Martarelli");
+ClienteFisico c = new ClienteFisico(1, "Martarelli", 999999);
