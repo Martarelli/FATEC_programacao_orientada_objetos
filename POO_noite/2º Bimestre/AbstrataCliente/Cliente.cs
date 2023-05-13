@@ -14,5 +14,6 @@ namespace AbstrataCliente
             Codigo = c;
             Nome = n;
         }
+        public abstract void Mostrar();
     }
 }
