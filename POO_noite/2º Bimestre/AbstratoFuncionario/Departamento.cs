@@ -34,6 +34,7 @@ namespace AbstratoFuncionario
         }
         public void ListarFuncionarios()
         {
+            System.Console.WriteLine($"\nDepartamento {Descricao}..............");
             for(int i = 0 ; i < VetF.Count; i++)
             {
                 Funcionario f = VetF.ElementAt<Funcionario>(i);
