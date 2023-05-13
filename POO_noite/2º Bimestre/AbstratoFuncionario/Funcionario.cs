@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace AbstratoFuncionario
 {
-    public class Funcionario
+    public abstract class Funcionario
     {
         public int Codigo { get; set; }
         public string Nome { get; set; }
