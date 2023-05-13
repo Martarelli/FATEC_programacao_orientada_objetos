@@ -16,6 +16,21 @@ namespace AbstratoFuncionario
             Codigo = c;
             Descricao = d;
         }
+        public void Admitir(Funcionario f)
+        {
+            VetF.Add(f);
+        }
+        public void DemitirFuncionario(int codigo)
+        {
+            for(int i = 0 ; i < VetF.Count; i++)
+            {
+                Funcionario f = VetF.ElementAt<Funcionario>(i);
+                if (f.Codigo == codigo)
+                {
+                    VetF.Remove(f);
+                }
+            }
+        }
 
     }
 }
