@@ -5,8 +5,14 @@ using System.Threading.Tasks;
 
 namespace AbstrataCliente
 {
-    public class Cliente
+    public abstract class Cliente
     {
-        
+        public int Codigo { get; set; }
+        public string Nome { get; set; }
+        public Cliente(int c, string n)
+        {
+            Codigo = c;
+            Nome = n;
+        }
     }
 }
