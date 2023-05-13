@@ -15,6 +15,7 @@ namespace AbstratoFuncionario
         {
             Codigo = c;
             Descricao = d;
+            VetF = new List<Funcionario>();
         }
         public void Admitir(Funcionario f)
         {
