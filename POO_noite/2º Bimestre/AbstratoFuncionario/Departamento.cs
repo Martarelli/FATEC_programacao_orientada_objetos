@@ -31,6 +31,13 @@ namespace AbstratoFuncionario
                 }
             }
         }
-
+        public void ListarFuncionarios()
+        {
+            for(int i = 0 ; i < VetF.Count; i++)
+            {
+                Funcionario f = VetF.ElementAt<Funcionario>(i);
+                f.Mostrar();
+            }
+        }
     }
 }
