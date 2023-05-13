@@ -17,3 +17,10 @@ d2.Admitir(c2);
 d1.ListarFuncionarios();
 d2.ListarFuncionarios();
 
+// d1.DemitirFuncionario(3);
+// d1.ListarFuncionarios();
+System.Console.WriteLine($"Total da folha do departamento {d1.Descricao} = {d1.CalcularFolha(30):C}");
+System.Console.WriteLine($"Total da folha do departamento {d2.Descricao} = {d2.CalcularFolha(30):C}");
+
+
+
