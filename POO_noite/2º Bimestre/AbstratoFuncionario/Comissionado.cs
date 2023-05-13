@@ -19,7 +19,7 @@ namespace AbstratoFuncionario
         public override void Mostrar()
         {
             base.Mostrar();
-            System.Console.WriteLine($"Porcentagem: {Porcentagem:N}%");
+            System.Console.WriteLine($"Porcentagem: {Porcentagem * 100:N}%");
         }
 
     }
