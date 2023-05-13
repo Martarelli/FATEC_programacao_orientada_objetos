@@ -12,5 +12,9 @@ namespace AbstrataCliente
         {
             Cpf = cpf;
         }
+        public override void Mostrar()
+        {
+            System.Console.WriteLine($"Código: {Codigo}\nNome: {Nome}\nCPF: {Cpf}");
+        }
     }
 }
