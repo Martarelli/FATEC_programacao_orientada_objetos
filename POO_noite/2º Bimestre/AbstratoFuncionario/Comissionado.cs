@@ -8,13 +8,13 @@ namespace AbstratoFuncionario
     public class Comissionado : Funcionario
     {
         public double Porcentagem { get; set; }
-        public Comissionado(int c, string n, double s, double p) : base(cod, nome, salario)
+        public Comissionado(int c, string n, double s, double p) : base(c, n, s)
         {
             Porcentagem = p;
         }
         public override double CalcularSalario(int diasUteis)
         {
-            return Salario += Salario * 30 * diasUteis * Porcentagem;
+            return Salario += Salario / 30 * diasUteis * Porcentagem;
         }
         public override void Mostrar()
         {
