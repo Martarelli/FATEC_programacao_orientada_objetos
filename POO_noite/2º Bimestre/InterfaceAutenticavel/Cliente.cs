@@ -13,7 +13,9 @@ namespace InterfaceAutenticavel
 
         public bool Autenticar(int s)
         {
-            return Senha == s;
+            if (Senha == s)
+                return true;
+            return false;
         }
 
     }
