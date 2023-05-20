@@ -51,5 +51,12 @@ namespace AbstratoFuncionario
             }
             return folha;
         }
+        public int CalcularQtdeDependentesFuncionarios()
+        {
+            int qtdTotal = 0;
+            foreach(Funcionario f in VetF)
+                qtdTotal += f.CalcularTotalDependentes();
+            return qtdTotal;    
+        }
     }
 }
