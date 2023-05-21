@@ -12,11 +12,11 @@ SeguroDeVida s2 = new SeguroDeVida();
 TotalizadorDeTributos tt = new TotalizadorDeTributos();
 ITributavel it = c1;
 tt.Adiciona(it);
-ITributavel it = c2;
+it = c2;
 tt.Adiciona(it);
-ITributavel it = s1;
+it = s1;
 tt.Adiciona(it);
-ITributavel it = s2;
+it = s2;
 tt.Adiciona(it);
 
 System.Console.WriteLine($"Total dos tributos: {tt.Total:C}");
