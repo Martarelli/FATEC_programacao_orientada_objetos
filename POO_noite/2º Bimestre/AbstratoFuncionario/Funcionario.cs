@@ -10,17 +10,23 @@ namespace AbstratoFuncionario
         public int Codigo { get; set; }
         public string Nome { get; set; }
         public double Salario { get; set; }
+        public List<Dependente> VetD { get; set; }
 
         public Funcionario(int cod, string nome, double salario)
         {
             Codigo = cod;
             Nome = nome;
             Salario = salario;
+            VetD = new List<Dependente>();
         }
         public abstract double CalcularSalario(int diasUteis);
         public virtual void Mostrar()
         {
             System.Console.WriteLine($"Cód: {Codigo}\tNome: {Nome}\tSalário: {Salario:C}");
+        }
+        public int CalcularTotalDependentes()
+        {
+            return VetD.Count;
         }
     }
 }
