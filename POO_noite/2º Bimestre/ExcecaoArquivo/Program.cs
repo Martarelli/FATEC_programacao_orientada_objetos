@@ -1,4 +1,12 @@
-﻿try
+﻿int valor = -10;
+
+if ( valor < 0)
+{
+System.ArgumentException erro = new System.ArgumentException ();
+throw erro ;
+}
+
+/* try
 {
 // Isto causará uma exceção
 //File.OpenRead("\\teste\\ArquivoLeitura.txt");
@@ -29,4 +37,4 @@ Console.WriteLine(e.ToString());
 Console.WriteLine();
 }
 
-System.Console.WriteLine("Termino do programa...");
+System.Console.WriteLine("Termino do programa..."); */
