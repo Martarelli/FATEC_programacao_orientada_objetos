@@ -5,7 +5,7 @@ total = valor1 / valor2;
 }
 catch (Exception ex) //Classe responsável pelo tipo de erro
 {
-throw ex;
+    System.Console.WriteLine("não foi possivel divisão por 0...." + ex.Message);
 }
 
 /* try
