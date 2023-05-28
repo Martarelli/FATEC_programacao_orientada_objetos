@@ -1,9 +1,11 @@
-﻿int valor = -10;
-
-if ( valor < 0)
+﻿int valor1 = 100, valor2 = 0, total = 0;
+try //Bloco onde poderá ocorrer algum erro
 {
-System.ArgumentException erro = new System.ArgumentException ();
-throw erro ;
+total = valor1 / valor2;
+}
+catch (Exception ex) //Classe responsável pelo tipo de erro
+{
+throw ex;
 }
 
 /* try
@@ -36,5 +38,5 @@ Console.WriteLine("-------------------------------------");
 Console.WriteLine(e.ToString());
 Console.WriteLine();
 }
-
-System.Console.WriteLine("Termino do programa..."); */
+*/
+System.Console.WriteLine("Termino do programa..."); 
