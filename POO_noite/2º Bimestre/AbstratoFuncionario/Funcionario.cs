@@ -24,9 +24,34 @@ namespace AbstratoFuncionario
         {
             System.Console.WriteLine($"Cód: {Codigo}\tNome: {Nome}\tSalário: {Salario:C}");
         }
-        public int CalcularTotalDependentes()
+        public virtual int CalcularTotalDependentes()
         {
             return VetD.Count;
+        }
+        public virtual void AdicionarDependente(Dependente d)
+        {
+            VetD.Add(d);
+        }
+        public virtual void RemoverDependente(int cod)
+        {
+            foreach (Dependente dep in VetD)
+            {
+                if(dep.Codigo == cod)
+                {
+                    VetD.Remove(dep);
+                    break;
+                }
+            }
+        }
+
+        public virtual void ListarDependentes()
+        {
+            System.Console.WriteLine($"DEPENDENTES FUNCIONARIO: {Nome}");
+            foreach(Dependente dep in VetD)
+            {
+                System.Console.WriteLine($"Nome: {dep.Nome}\tIdade: {dep.Idade}");
+            }
+            System.Console.WriteLine();
         }
     }
 }

@@ -21,6 +21,5 @@ namespace AbstratoFuncionario
             base.Mostrar();
             System.Console.WriteLine($"Porcentagem: {Porcentagem * 100:N}%");
         }
-
     }
 }

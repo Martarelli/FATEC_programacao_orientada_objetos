@@ -11,6 +11,13 @@ namespace AbstratoFuncionario
         public string Nome { get; set; } = "";
         public int Idade { get; set; }
 
+        public Dependente(int c, string n, int i)
+        {
+            Codigo = c;
+            Nome = n;
+            Idade = i;
+        }
+        
         public void MaiorIdade()
         {
             if(Idade >= 18)
