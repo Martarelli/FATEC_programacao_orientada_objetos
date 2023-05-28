@@ -1,7 +1,8 @@
 ﻿try
 {
 // Isto causará uma exceção
-File.OpenRead("\\teste\\ArquivoLeitura.txt");
+//File.OpenRead("\\teste\\ArquivoLeitura.txt");
+File.OpenRead("ArquivoLeitura.txt");
 }
 catch (FileNotFoundException e)
 {
@@ -27,3 +28,5 @@ Console.WriteLine("-------------------------------------");
 Console.WriteLine(e.ToString());
 Console.WriteLine();
 }
+
+System.Console.WriteLine("Termino do programa...");
