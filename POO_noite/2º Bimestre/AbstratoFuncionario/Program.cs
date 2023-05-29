@@ -19,10 +19,11 @@ c1.ListarDependentes();
 
 Comissionado c2 = new Comissionado(4, "Seu Creison", 1000, 0.5);
 Dependente dep5 = new Dependente(5, "Creisinho", 2);
-Dependente dep6 = new Dependente(6, "Josileison", 5);
+Dependente dep6 = new Dependente(6, "Josileison", 25);
 c2.AdicionarDependente(dep5);
 c2.AdicionarDependente(dep6);
-c2.RemoverDependente(6);
+c2.RemoverDependenteMaioridade(5);
+c2.RemoverDependenteMaioridade(6);
 c2.ListarDependentes();
 
 Departamento d1 = new Departamento(1, "TI");
