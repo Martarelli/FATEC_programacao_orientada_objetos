@@ -18,12 +18,11 @@ namespace AbstratoFuncionario
             Idade = i;
         }
         
-        public void MaiorIdade()
+        public bool MaiorIdade()
         {
             if(Idade >= 18)
-                System.Console.WriteLine($"{Nome} - Maior de idade");
-            else
-                System.Console.WriteLine($"{Nome} - Menor de idade");
+                return true;
+            return false;
         }
 
     }
