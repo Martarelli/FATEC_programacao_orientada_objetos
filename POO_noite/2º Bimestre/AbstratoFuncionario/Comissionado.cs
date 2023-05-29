@@ -26,7 +26,7 @@ namespace AbstratoFuncionario
         {
             return VetD.Count;
         }
-                public override void AdicionarDependente(Dependente d)
+        public override void AdicionarDependente(Dependente d)
         {
             VetD.Add(d);
         }
