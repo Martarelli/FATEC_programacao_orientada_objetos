@@ -24,9 +24,9 @@ namespace AbstratoFuncionario
         {
             System.Console.WriteLine($"Cód: {Codigo}\tNome: {Nome}\tSalário: {Salario:C}");
         }
-        public int CalcularTotalDependentes()
-        {
-            return VetD.Count;
-        }
+        public abstract int CalcularTotalDependentes();
+        public abstract void AdicionarDependente(Dependente d);
+        public abstract void RemoverDependenteMaioridade(int cod);
+        public abstract void ListarDependentes();
     }
 }

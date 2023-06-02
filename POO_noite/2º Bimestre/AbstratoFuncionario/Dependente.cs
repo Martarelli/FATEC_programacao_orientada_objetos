@@ -11,12 +11,18 @@ namespace AbstratoFuncionario
         public string Nome { get; set; } = "";
         public int Idade { get; set; }
 
-        public void MaiorIdade()
+        public Dependente(int c, string n, int i)
+        {
+            Codigo = c;
+            Nome = n;
+            Idade = i;
+        }
+        
+        public bool MaiorIdade()
         {
             if(Idade >= 18)
-                System.Console.WriteLine($"{Nome} - Maior de idade");
-            else
-                System.Console.WriteLine($"{Nome} - Menor de idade");
+                return true;
+            return false;
         }
 
     }
