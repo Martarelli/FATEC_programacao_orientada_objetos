@@ -21,8 +21,14 @@ orcamento.AdicionaItens(it2);
 orcamento.AdicionaItens(it3);
 orcamento.AdicionaItens(it4);
 orcamento.AdicionaItens(it5);
-//orcamento.AdicionaItens(it6);
+orcamento.AdicionaItens(it6);
 
 CalculadoraDeDescontos calculadora = new CalculadoraDeDescontos();
-Console.WriteLine("Desconto: " + calculadora.Calcula(orcamento));
+Desconto itemA = new ItemA();
+Desconto itemB = new ItemB();
+Console.Write("Desconto: Item A: "); 
+calculadora.Calcula(orcamento, itemA);
+Console.Write("Desconto: Item B: "); 
+calculadora.Calcula(orcamento, itemB);
+
 

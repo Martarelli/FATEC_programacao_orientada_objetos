@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace PadraoProjetoTrabalho
 {
-    public class Orcamento
+    public class Orcamento 
     {
         public double Valor { get; private set; }
         public List<Item> Itens {get; private set;}
@@ -17,6 +17,7 @@ namespace PadraoProjetoTrabalho
         public void AdicionaItens(Item item)
         {
             Itens.Add(item);
-        }
+        }   
+
     }
 }

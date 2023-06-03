@@ -7,7 +7,7 @@ namespace PadraoProjetoTrabalho
 {
     public class CalculadoraDeDescontos
     {
-        public double Calcula(Orcamento orcamento)
+        public double CalculaIf(Orcamento orcamento)
         {
             // verifica primeira regra de possível desconto
             if (orcamento.Itens.Count > 5)
@@ -18,6 +18,12 @@ namespace PadraoProjetoTrabalho
             // verifica terceira, quarta, quinta regra de possível desconto
             // assim teria mais vários if a seguir
             return 0;
+        }
+
+        public void Calcula(Orcamento orcamento, Desconto desconto)
+        {
+            double valorDesconto = desconto.Calcula(orcamento);
+            Console.WriteLine(valorDesconto);
         }
         // Classe pouca coesa, caso seja inserido novos descontos o que fazer?
         // ???????????????????????????????
